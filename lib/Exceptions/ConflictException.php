@@ -21,10 +21,11 @@
  *
  */
 
-namespace OCA\Deck;
+namespace OCA\Deck\Exceptions;
 
+use OCA\Deck\StatusException;
 
-class ConflictException extends \Exception {
+class ConflictException extends StatusException {
 
 	public function __construct($message) {
 		parent::__construct($message);

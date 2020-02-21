@@ -26,6 +26,7 @@ namespace OCA\Deck\Service;
 use OC\Security\CSP\ContentSecurityPolicyManager;
 use OCA\Deck\Db\Attachment;
 use OCA\Deck\StatusException;
+use OCA\Deck\Exceptions\ConflictException;
 use OCP\AppFramework\Http\ContentSecurityPolicy;
 use OCP\AppFramework\Http\EmptyContentSecurityPolicy;
 use OCP\AppFramework\Http\FileDisplayResponse;
@@ -42,7 +43,7 @@ use OCP\IConfig;
 use OCP\IL10N;
 use OCP\ILogger;
 use OCP\IRequest;
-use OCP\Deck\ConflictException;
+
 
 class FileService implements IAttachmentService {
 
